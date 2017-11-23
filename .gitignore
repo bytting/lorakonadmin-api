@@ -8,6 +8,7 @@
 *.user
 *.userosscache
 *.sln.docstates
+lorakonadmin-api/webConnectionString.config
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs

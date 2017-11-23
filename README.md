@@ -1,2 +1,2 @@
 # lorakonadmin-api
-Web service for managing Gamma spectrum database
+Web API to manage Lorakon spectrum database
