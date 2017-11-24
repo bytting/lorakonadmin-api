@@ -9,12 +9,12 @@ namespace lorakonadmin_api.Models
     {
         public SpectrumInfoBasic()
         {
-
         }
 
         public Guid ID { get; set; }
         public string AccountName { get; set; }
         public string Operator { get; set; }
+        public string ExternalID { get; set; }
         public DateTime CreateDate { get; set; }
         public DateTime AcquisitionDate { get; set; }
         public DateTime ReferenceDate { get; set; }

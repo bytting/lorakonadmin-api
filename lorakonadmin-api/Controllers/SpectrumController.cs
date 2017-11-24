@@ -151,6 +151,7 @@ namespace lorakonadmin_api.Controllers
                 command.CommandText = @"
 select a.vchName as 'Laboratory', 
 	sil.Operator as 'Operator',
+    sil.ExternalID as 'ExternalID',
 	cast(sil.CreateDate as datetime2(0)) as 'CreateDate',
 	cast(sil.AcquisitionDate as datetime2(0)) as 'AcquisitionDate',
 	cast(sil.ReferenceDate as datetime2(0)) as 'ReferenceDate',
@@ -193,6 +194,7 @@ where 1=1
                         spec.ID = new Guid(reader["ID"].ToString());
                         spec.AccountName = reader["Laboratory"].ToString();
                         spec.Operator = reader["Operator"].ToString();
+                        spec.ExternalID = reader["ExternalID"].ToString();
                         spec.CreateDate = Convert.ToDateTime(reader["CreateDate"]);
                         spec.AcquisitionDate = Convert.ToDateTime(reader["AcquisitionDate"]);
                         spec.ReferenceDate = Convert.ToDateTime(reader["ReferenceDate"]);
